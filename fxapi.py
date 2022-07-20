@@ -3,14 +3,14 @@ from datetime import datetime as dt
 sp = dt.strptime
 import pandas as pd
 
-df = pd.read_pickle("currency_codes.pkl")
+df = pd.read_pickle("currency_codes.pkl")        # load the list of all ISO currency codes.
 
 def date(input_date):
-    return sp(input_date, "%Y-%m-%d")
+    return sp(input_date, "%Y-%m-%d")            # define the date format accepted in requests.
 
 
 app = Flask(__name__)
-@app.route('/request', methods=['GET'])
+@app.route('/request', methods=['GET'])          # expected request: [ip address and port]/request?currencies=[currency1]-[currency2]&date=[year]-[month]-[day]
 def process_data():
     currencies = request.args.get("currencies")
     in_date = request.args.get("date")
@@ -19,10 +19,10 @@ def process_data():
     cur1, cur2 = cur1.upper(), cur2.upper()
     
     assert cur1 in df and cur2 in df, "ISO currency codes only. "
-    in_date = date(in_date)
+    in_date = date(in_date)                       # check whether the input date is in the correct format. If yes, change to datetime type.
     
     from forex_python.converter import CurrencyRates as cr
-    c = cr()
+    c = cr()                                      # source of fx rates.
     output = c.get_rate(cur1, cur2, in_date)
     return str(output)
     
