@@ -1,0 +1,8 @@
+FROM python:latest
+RUN mkdir /test
+RUN cd /test
+WORKDIR /test
+ADD fxapi.py .
+ADD currency_codes.pkl .
+RUN pip install flask
+CMD ["python", "fxapi.py"]
