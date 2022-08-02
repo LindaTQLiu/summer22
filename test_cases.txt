@@ -1,0 +1,17 @@
+unit tests:
+    raw_date
+        len(raw_date.split("-")) from 0 to 4
+        invalid date of len 3
+    raw_cur
+        len(raw_cur.split("-")) from 0 to 3
+        not in df
+    fx
+        not in df
+        result(a-b)*result(b-a)=1
+        
+
+
+
+Postman:
+    attributes missing
+    extra attributes
