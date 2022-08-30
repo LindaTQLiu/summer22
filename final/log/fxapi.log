@@ -1,0 +1,607 @@
+08/24/2022 12:02 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 12:02 [INFO]                                  S T A R T                   24/08/2022 12:02:40
+08/24/2022 12:02 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 12:02 [INFO]  Config file:                   config\fxapi.cfg
+08/24/2022 12:02 [INFO]  Config used:                   DEFAULT
+08/24/2022 12:02 [INFO]  Log file:                      log\fxapi.log
+08/24/2022 12:02 [INFO]  File logging level:            INFO
+08/24/2022 12:02 [INFO]  Console logging level:         INFO
+08/24/2022 12:02 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 12:02 [INFO]   * Restarting with watchdog (windowsapi)
+08/24/2022 12:02 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 12:02 [INFO]                                  S T A R T                   24/08/2022 12:02:42
+08/24/2022 12:02 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 12:02 [INFO]  Config file:                   config\fxapi.cfg
+08/24/2022 12:02 [INFO]  Config used:                   DEFAULT
+08/24/2022 12:02 [INFO]  Log file:                      log\fxapi.log
+08/24/2022 12:02 [INFO]  File logging level:            INFO
+08/24/2022 12:02 [INFO]  Console logging level:         INFO
+08/24/2022 12:02 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 12:02 [WARNING]   * Debugger is active!
+08/24/2022 12:02 [INFO]   * Debugger PIN: 339-931-393
+08/24/2022 12:02 [INFO]   * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+08/24/2022 12:03 [INFO]  0.06229638754943147 Successful request. 
+08/24/2022 12:03 [INFO]  127.0.0.1 - - [24/Aug/2022 12:03:16] "GET /rates?currencies=jpy-cny&date=2021-1-8 HTTP/1.1" 200 -
+08/24/2022 12:03 [INFO]  1.3565999047474198 Successful request. 
+08/24/2022 12:03 [INFO]  127.0.0.1 - - [24/Aug/2022 12:03:38] "GET /rates?currencies=gbp-usd&date=2021-1-8 HTTP/1.1" 200 -
+08/24/2022 12:03 [ERROR]  Attribute "currencies" requires a pair of iso currencies separated with '-'
+08/24/2022 12:03 [INFO]  127.0.0.1 - - [24/Aug/2022 12:03:42] "[31m[1mGET /rates?currencies=gbp-usd-eur&date=2021-1-8 HTTP/1.1[0m" 400 -
+08/24/2022 12:03 [ERROR]  Attribute "currencies" requires a pair of iso currencies separated with '-'
+08/24/2022 12:03 [INFO]  127.0.0.1 - - [24/Aug/2022 12:03:46] "[31m[1mGET /rates?currencies=g&date=2021-1-8 HTTP/1.1[0m" 400 -
+08/24/2022 12:03 [ERROR]  "currencies" attribute missing. 
+08/24/2022 12:03 [INFO]  127.0.0.1 - - [24/Aug/2022 12:03:48] "[31m[1mGET /rates?date=2021-1-8 HTTP/1.1[0m" 400 -
+08/24/2022 12:04 [INFO]  1.0445614761472664 Successful request. 
+08/24/2022 12:04 [INFO]  127.0.0.1 - - [24/Aug/2022 12:04:05] "GET /rates?date=2021-1-8&currencies=cad-sgd HTTP/1.1" 200 -
+08/24/2022 12:04 [ERROR]  Date input can't be turned into datetime object. 
+08/24/2022 12:04 [INFO]  127.0.0.1 - - [24/Aug/2022 12:04:10] "[31m[1mGET /rates?date=2021-13-8&currencies=cad-sgd HTTP/1.1[0m" 400 -
+08/24/2022 12:04 [INFO]  1.0445614761472664 Successful request. 
+08/24/2022 12:04 [INFO]  127.0.0.1 - - [24/Aug/2022 12:04:15] "GET /rates?date=2021-01-8&currencies=cad-sgd HTTP/1.1" 200 -
+08/24/2022 12:04 [INFO]  1.0379224558104116 Successful request. 
+08/24/2022 12:04 [INFO]  127.0.0.1 - - [24/Aug/2022 12:04:19] "GET /rates?date=2021-01-008&currencies=cad-sgd HTTP/1.1" 200 -
+08/24/2022 12:04 [ERROR]  "date" attribute needs to be in the format of year-month-day where all three must be digits. 
+08/24/2022 12:04 [INFO]  127.0.0.1 - - [24/Aug/2022 12:04:23] "[31m[1mGET /rates?date=2021-01-00.8&currencies=cad-sgd HTTP/1.1[0m" 400 -
+08/24/2022 12:05 [INFO]  127.0.0.1 - - [24/Aug/2022 12:05:19] "GET /logs HTTP/1.1" 200 -
+08/24/2022 12:05 [INFO]  127.0.0.1 - - [24/Aug/2022 12:05:21] "GET /getLog HTTP/1.1" 200 -
+08/24/2022 12:05 [INFO]  6.475401706254219 Successful request. 
+08/24/2022 12:05 [INFO]  127.0.0.1 - - [24/Aug/2022 12:05:36] "GET /rates?currencies=cuc-cny&date=2021-1-8 HTTP/1.1" 200 -
+08/24/2022 12:05 [INFO]  107.78305038973792 Successful request. 
+08/24/2022 12:05 [INFO]  127.0.0.1 - - [24/Aug/2022 12:05:40] "GET /rates?currencies=cuc-vuv&date=2021-1-8 HTTP/1.1" 200 -
+08/24/2022 12:05 [ERROR]  "UVU" not in recognised currencies. 
+08/24/2022 12:05 [INFO]  127.0.0.1 - - [24/Aug/2022 12:05:47] "[31m[1mGET /rates?currencies=cuc-uvu&date=2021-1-8 HTTP/1.1[0m" 400 -
+08/24/2022 12:05 [INFO]  127.0.0.1 - - [24/Aug/2022 12:05:53] "GET /logs HTTP/1.1" 200 -
+08/24/2022 12:08 [WARNING]   * Debugger is active!
+08/24/2022 12:08 [INFO]   * Debugger PIN: 339-931-393
+08/24/2022 12:08 [INFO]   * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+08/24/2022 12:08 [INFO]   * Restarting with watchdog (windowsapi)
+08/24/2022 12:08 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 12:08 [INFO]                                  S T A R T                   24/08/2022 12:08:30
+08/24/2022 12:08 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 12:08 [INFO]  Config file:                   config\fxapi.cfg
+08/24/2022 12:08 [INFO]  Config used:                   DEFAULT
+08/24/2022 12:08 [INFO]  Log file:                      log\fxapi.log
+08/24/2022 12:08 [INFO]  File logging level:            INFO
+08/24/2022 12:08 [INFO]  Console logging level:         INFO
+08/24/2022 12:08 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 12:08 [WARNING]   * Debugger is active!
+08/24/2022 12:08 [INFO]   * Debugger PIN: 339-931-393
+08/24/2022 12:08 [INFO]   * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+08/24/2022 12:08 [WARNING]   * Debugger is active!
+08/24/2022 12:08 [INFO]   * Debugger PIN: 339-931-393
+08/24/2022 12:08 [INFO]   * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+08/24/2022 03:50 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 03:50 [INFO]                                  S T A R T                   24/08/2022 15:50:37
+08/24/2022 03:50 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 03:50 [INFO]  Config file:                   config\fxapi.cfg
+08/24/2022 03:50 [INFO]  Config used:                   DEFAULT
+08/24/2022 03:50 [INFO]  Log file:                      log\fxapi.log
+08/24/2022 03:50 [INFO]  File logging level:            INFO
+08/24/2022 03:50 [INFO]  Console logging level:         INFO
+08/24/2022 03:50 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 03:50 [CRITICAL]  Traceback (most recent call last):
+  File "C:\Users\LindaLiu\ML\git repos\summer22\summer22\final\fxapi.py", line 53, in <module>
+    df = pd.read_pickle("currency_codes.pkl")        # load the list of all ISO currency codes.
+  File "C:\tools\Anaconda3\lib\site-packages\pandas\io\pickle.py", line 187, in read_pickle
+    with get_handle(
+  File "C:\tools\Anaconda3\lib\site-packages\pandas\io\common.py", line 798, in get_handle
+    handle = open(handle, ioargs.mode)
+FileNotFoundError: [Errno 2] No such file or directory: 'currency_codes.pkl'
+
+08/24/2022 03:51 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 03:51 [INFO]                                  S T A R T                   24/08/2022 15:51:04
+08/24/2022 03:51 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 03:51 [INFO]  Config file:                   config\fxapi.cfg
+08/24/2022 03:51 [INFO]  Config used:                   DEFAULT
+08/24/2022 03:51 [INFO]  Log file:                      log\fxapi.log
+08/24/2022 03:51 [INFO]  File logging level:            INFO
+08/24/2022 03:51 [INFO]  Console logging level:         INFO
+08/24/2022 03:51 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 03:51 [INFO]   * Restarting with watchdog (windowsapi)
+08/24/2022 03:51 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 03:51 [INFO]                                  S T A R T                   24/08/2022 15:51:06
+08/24/2022 03:51 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 03:51 [INFO]  Config file:                   config\fxapi.cfg
+08/24/2022 03:51 [INFO]  Config used:                   DEFAULT
+08/24/2022 03:51 [INFO]  Log file:                      log\fxapi.log
+08/24/2022 03:51 [INFO]  File logging level:            INFO
+08/24/2022 03:51 [INFO]  Console logging level:         INFO
+08/24/2022 03:51 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 03:51 [WARNING]   * Debugger is active!
+08/24/2022 03:51 [INFO]   * Debugger PIN: 339-931-393
+08/24/2022 03:51 [INFO]   * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+08/24/2022 03:52 [INFO]   * Detected change in 'C:\\Users\\LindaLiu\\ML\\git repos\\summer22\\summer22\\final\\fxapi.py', reloading
+08/24/2022 03:52 [INFO]   * Detected change in 'C:\\Users\\LindaLiu\\ML\\git repos\\summer22\\summer22\\final\\fxapi.py', reloading
+08/24/2022 03:52 [INFO]   * Detected change in 'C:\\Users\\LindaLiu\\ML\\git repos\\summer22\\summer22\\final\\fxapi.py', reloading
+08/24/2022 03:52 [INFO]   * Restarting with watchdog (windowsapi)
+08/24/2022 03:52 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 03:52 [INFO]                                  S T A R T                   24/08/2022 15:52:40
+08/24/2022 03:52 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 03:52 [INFO]  Config file:                   config\fxapi.cfg
+08/24/2022 03:52 [INFO]  Config used:                   DEFAULT
+08/24/2022 03:52 [INFO]  Log file:                      log\fxapi.log
+08/24/2022 03:52 [INFO]  File logging level:            INFO
+08/24/2022 03:52 [INFO]  Console logging level:         INFO
+08/24/2022 03:52 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 03:52 [WARNING]   * Debugger is active!
+08/24/2022 03:52 [INFO]   * Debugger PIN: 339-931-393
+08/24/2022 03:52 [INFO]   * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+08/24/2022 03:52 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Lib\\os.py', reloading
+08/24/2022 03:52 [INFO]   * Restarting with watchdog (windowsapi)
+08/24/2022 03:52 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 03:52 [INFO]                                  S T A R T                   24/08/2022 15:52:54
+08/24/2022 03:52 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 03:52 [INFO]  Config file:                   config\fxapi.cfg
+08/24/2022 03:52 [INFO]  Config used:                   DEFAULT
+08/24/2022 03:52 [INFO]  Log file:                      log\fxapi.log
+08/24/2022 03:52 [INFO]  File logging level:            INFO
+08/24/2022 03:52 [INFO]  Console logging level:         INFO
+08/24/2022 03:52 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 03:52 [WARNING]   * Debugger is active!
+08/24/2022 03:52 [INFO]   * Debugger PIN: 339-931-393
+08/24/2022 03:52 [INFO]   * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+08/24/2022 03:53 [INFO]   * Detected change in 'C:\\Users\\LindaLiu\\AppData\\Roaming\\Python\\Python39\\site-packages\\daiquiri\\__init__.py', reloading
+08/24/2022 03:53 [INFO]   * Detected change in 'C:\\Users\\LindaLiu\\AppData\\Roaming\\Python\\Python39\\site-packages\\daiquiri\\output.py', reloading
+08/24/2022 03:53 [INFO]   * Restarting with watchdog (windowsapi)
+08/24/2022 03:53 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 03:53 [INFO]                                  S T A R T                   24/08/2022 15:53:33
+08/24/2022 03:53 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 03:53 [INFO]  Config file:                   config\fxapi.cfg
+08/24/2022 03:53 [INFO]  Config used:                   DEFAULT
+08/24/2022 03:53 [INFO]  Log file:                      log\fxapi.log
+08/24/2022 03:53 [INFO]  File logging level:            INFO
+08/24/2022 03:53 [INFO]  Console logging level:         INFO
+08/24/2022 03:53 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 03:53 [WARNING]   * Debugger is active!
+08/24/2022 03:53 [INFO]   * Debugger PIN: 339-931-393
+08/24/2022 03:53 [INFO]   * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+08/24/2022 03:53 [INFO]   * Detected change in 'C:\\Users\\LindaLiu\\AppData\\Roaming\\Python\\Python39\\site-packages\\daiquiri\\formatter.py', reloading
+08/24/2022 03:53 [INFO]   * Restarting with watchdog (windowsapi)
+08/24/2022 03:53 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 03:53 [INFO]                                  S T A R T                   24/08/2022 15:53:44
+08/24/2022 03:53 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 03:53 [INFO]  Config file:                   config\fxapi.cfg
+08/24/2022 03:53 [INFO]  Config used:                   DEFAULT
+08/24/2022 03:53 [INFO]  Log file:                      log\fxapi.log
+08/24/2022 03:53 [INFO]  File logging level:            INFO
+08/24/2022 03:53 [INFO]  Console logging level:         INFO
+08/24/2022 03:53 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 03:53 [WARNING]   * Debugger is active!
+08/24/2022 03:53 [INFO]   * Debugger PIN: 339-931-393
+08/24/2022 03:53 [INFO]   * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+08/24/2022 03:54 [INFO]   * Detected change in 'C:\\Users\\LindaLiu\\ML\\git repos\\summer22\\summer22\\final\\common\\myutils.py', reloading
+08/24/2022 03:54 [INFO]   * Detected change in 'C:\\Users\\LindaLiu\\ML\\git repos\\summer22\\summer22\\final\\common\\myutils.py', reloading
+08/24/2022 03:54 [INFO]   * Detected change in 'C:\\Users\\LindaLiu\\ML\\git repos\\summer22\\summer22\\final\\common\\myutils.py', reloading
+08/24/2022 03:54 [INFO]   * Restarting with watchdog (windowsapi)
+08/24/2022 03:54 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 03:54 [INFO]                                  S T A R T                   24/08/2022 15:54:51
+08/24/2022 03:54 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 03:54 [INFO]  Config file:                   config\fxapi.cfg
+08/24/2022 03:54 [INFO]  Config used:                   DEFAULT
+08/24/2022 03:54 [INFO]  Log file:                      log\fxapi.log
+08/24/2022 03:54 [INFO]  File logging level:            INFO
+08/24/2022 03:54 [INFO]  Console logging level:         INFO
+08/24/2022 03:54 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 03:54 [WARNING]   * Debugger is active!
+08/24/2022 03:54 [INFO]   * Debugger PIN: 339-931-393
+08/24/2022 03:54 [INFO]   * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+08/24/2022 03:55 [INFO]   * Detected change in 'C:\\Users\\LindaLiu\\ML\\git repos\\summer22\\summer22\\final\\common\\myutils.py', reloading
+08/24/2022 03:55 [INFO]   * Detected change in 'C:\\Users\\LindaLiu\\ML\\git repos\\summer22\\summer22\\final\\common\\myutils.py', reloading
+08/24/2022 03:55 [INFO]   * Detected change in 'C:\\Users\\LindaLiu\\ML\\git repos\\summer22\\summer22\\final\\common\\myutils.py', reloading
+08/24/2022 03:55 [INFO]   * Restarting with watchdog (windowsapi)
+08/24/2022 03:55 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 03:55 [INFO]                                  S T A R T                   24/08/2022 15:55:12
+08/24/2022 03:55 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 03:55 [INFO]  Config file:                   config\fxapi.cfg
+08/24/2022 03:55 [INFO]  Config used:                   DEFAULT
+08/24/2022 03:55 [INFO]  Log file:                      log\fxapi.log
+08/24/2022 03:55 [INFO]  File logging level:            INFO
+08/24/2022 03:55 [INFO]  Console logging level:         INFO
+08/24/2022 03:55 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 03:55 [WARNING]   * Debugger is active!
+08/24/2022 03:55 [INFO]   * Debugger PIN: 339-931-393
+08/24/2022 03:55 [INFO]   * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+08/24/2022 03:55 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Lib\\site-packages\\flask\\__init__.py', reloading
+08/24/2022 03:55 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Lib\\site-packages\\flask\\globals.py', reloading
+08/24/2022 03:55 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Lib\\site-packages\\flask\\app.py', reloading
+08/24/2022 03:55 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Lib\\site-packages\\flask\\helpers.py', reloading
+08/24/2022 03:55 [INFO]   * Restarting with watchdog (windowsapi)
+08/24/2022 03:55 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 03:55 [INFO]                                  S T A R T                   24/08/2022 15:55:36
+08/24/2022 03:55 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 03:55 [INFO]  Config file:                   config\fxapi.cfg
+08/24/2022 03:55 [INFO]  Config used:                   DEFAULT
+08/24/2022 03:55 [INFO]  Log file:                      log\fxapi.log
+08/24/2022 03:55 [INFO]  File logging level:            INFO
+08/24/2022 03:55 [INFO]  Console logging level:         INFO
+08/24/2022 03:55 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 03:55 [WARNING]   * Debugger is active!
+08/24/2022 03:55 [INFO]   * Debugger PIN: 339-931-393
+08/24/2022 03:55 [INFO]   * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+08/24/2022 03:55 [INFO]   * Detected change in 'C:\\Users\\LindaLiu\\ML\\git repos\\summer22\\summer22\\final\\fxapi.py', reloading
+08/24/2022 03:55 [INFO]   * Detected change in 'C:\\Users\\LindaLiu\\ML\\git repos\\summer22\\summer22\\final\\fxapi.py', reloading
+08/24/2022 03:55 [INFO]   * Detected change in 'C:\\Users\\LindaLiu\\ML\\git repos\\summer22\\summer22\\final\\fxapi.py', reloading
+08/24/2022 03:55 [INFO]   * Detected change in 'C:\\Users\\LindaLiu\\ML\\git repos\\summer22\\summer22\\final\\fxapi.py', reloading
+08/24/2022 03:55 [INFO]   * Restarting with watchdog (windowsapi)
+08/24/2022 03:55 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 03:55 [INFO]                                  S T A R T                   24/08/2022 15:55:50
+08/24/2022 03:55 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 03:55 [INFO]  Config file:                   config\fxapi.cfg
+08/24/2022 03:55 [INFO]  Config used:                   DEFAULT
+08/24/2022 03:55 [INFO]  Log file:                      log\fxapi.log
+08/24/2022 03:55 [INFO]  File logging level:            INFO
+08/24/2022 03:55 [INFO]  Console logging level:         INFO
+08/24/2022 03:55 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 03:55 [WARNING]   * Debugger is active!
+08/24/2022 03:55 [INFO]   * Debugger PIN: 339-931-393
+08/24/2022 03:55 [INFO]   * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+08/24/2022 03:56 [INFO]   * Detected change in 'C:\\Users\\LindaLiu\\ML\\git repos\\summer22\\summer22\\final\\fxapi1.py', reloading
+08/24/2022 03:56 [INFO]   * Detected change in 'C:\\Users\\LindaLiu\\ML\\git repos\\summer22\\summer22\\final\\functions.py', reloading
+08/24/2022 03:56 [INFO]   * Restarting with watchdog (windowsapi)
+08/24/2022 03:56 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 03:56 [INFO]                                  S T A R T                   24/08/2022 15:56:19
+08/24/2022 03:56 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 03:56 [INFO]  Config file:                   config\fxapi.cfg
+08/24/2022 03:56 [INFO]  Config used:                   DEFAULT
+08/24/2022 03:56 [INFO]  Log file:                      log\fxapi.log
+08/24/2022 03:56 [INFO]  File logging level:            INFO
+08/24/2022 03:56 [INFO]  Console logging level:         INFO
+08/24/2022 03:56 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 03:56 [WARNING]   * Debugger is active!
+08/24/2022 03:56 [INFO]   * Debugger PIN: 339-931-393
+08/24/2022 03:56 [INFO]   * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+08/24/2022 05:18 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\cwp.py', reloading
+08/24/2022 05:18 [INFO]   * Restarting with watchdog (windowsapi)
+08/24/2022 05:18 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 05:18 [INFO]                                  S T A R T                   24/08/2022 17:18:40
+08/24/2022 05:18 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 05:18 [INFO]  Config file:                   config\fxapi.cfg
+08/24/2022 05:18 [INFO]  Config used:                   DEFAULT
+08/24/2022 05:18 [INFO]  Log file:                      log\fxapi.log
+08/24/2022 05:18 [INFO]  File logging level:            INFO
+08/24/2022 05:18 [INFO]  Console logging level:         INFO
+08/24/2022 05:18 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 05:18 [WARNING]   * Debugger is active!
+08/24/2022 05:18 [INFO]   * Debugger PIN: 339-931-393
+08/24/2022 05:18 [INFO]   * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+08/24/2022 05:18 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Scripts\\conda-script.py', reloading
+08/24/2022 05:18 [INFO]   * Restarting with watchdog (windowsapi)
+08/24/2022 05:18 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 05:18 [INFO]                                  S T A R T                   24/08/2022 17:18:45
+08/24/2022 05:18 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 05:18 [INFO]  Config file:                   config\fxapi.cfg
+08/24/2022 05:18 [INFO]  Config used:                   DEFAULT
+08/24/2022 05:18 [INFO]  Log file:                      log\fxapi.log
+08/24/2022 05:18 [INFO]  File logging level:            INFO
+08/24/2022 05:18 [INFO]  Console logging level:         INFO
+08/24/2022 05:18 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 05:18 [WARNING]   * Debugger is active!
+08/24/2022 05:18 [INFO]   * Debugger PIN: 339-931-393
+08/24/2022 05:18 [INFO]   * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+08/24/2022 05:19 [INFO]   * Detected change in 'C:\\Users\\LindaLiu\\AppData\\Roaming\\Python\\Python39\\site-packages\\pip\\_vendor\\pyparsing\\core.py', reloading
+08/24/2022 05:19 [INFO]   * Detected change in 'C:\\Users\\LindaLiu\\AppData\\Roaming\\Python\\Python39\\site-packages\\pip\\_vendor\\packaging\\markers.py', reloading
+08/24/2022 05:19 [INFO]   * Restarting with watchdog (windowsapi)
+08/24/2022 05:19 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 05:19 [INFO]                                  S T A R T                   24/08/2022 17:19:22
+08/24/2022 05:19 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 05:19 [INFO]  Config file:                   config\fxapi.cfg
+08/24/2022 05:19 [INFO]  Config used:                   DEFAULT
+08/24/2022 05:19 [INFO]  Log file:                      log\fxapi.log
+08/24/2022 05:19 [INFO]  File logging level:            INFO
+08/24/2022 05:19 [INFO]  Console logging level:         INFO
+08/24/2022 05:19 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 05:19 [WARNING]   * Debugger is active!
+08/24/2022 05:19 [INFO]   * Debugger PIN: 339-931-393
+08/24/2022 05:19 [INFO]   * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+08/24/2022 05:19 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Scripts\\jupyter-notebook-script.py', reloading
+08/24/2022 05:19 [INFO]   * Restarting with watchdog (windowsapi)
+08/24/2022 05:19 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 05:19 [INFO]                                  S T A R T                   24/08/2022 17:19:40
+08/24/2022 05:19 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 05:19 [INFO]  Config file:                   config\fxapi.cfg
+08/24/2022 05:19 [INFO]  Config used:                   DEFAULT
+08/24/2022 05:19 [INFO]  Log file:                      log\fxapi.log
+08/24/2022 05:19 [INFO]  File logging level:            INFO
+08/24/2022 05:19 [INFO]  Console logging level:         INFO
+08/24/2022 05:19 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 05:19 [WARNING]   * Debugger is active!
+08/24/2022 05:19 [INFO]   * Debugger PIN: 339-931-393
+08/24/2022 05:19 [INFO]   * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+08/24/2022 05:19 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Lib\\site-packages\\debugpy\\_vendored\\pydevd\\_pydevd_bundle\\pydevd_exec.py', reloading
+08/24/2022 05:19 [INFO]   * Restarting with watchdog (windowsapi)
+08/24/2022 05:19 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 05:19 [INFO]                                  S T A R T                   24/08/2022 17:19:46
+08/24/2022 05:19 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 05:19 [INFO]  Config file:                   config\fxapi.cfg
+08/24/2022 05:19 [INFO]  Config used:                   DEFAULT
+08/24/2022 05:19 [INFO]  Log file:                      log\fxapi.log
+08/24/2022 05:19 [INFO]  File logging level:            INFO
+08/24/2022 05:19 [INFO]  Console logging level:         INFO
+08/24/2022 05:19 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 05:19 [WARNING]   * Debugger is active!
+08/24/2022 05:19 [INFO]   * Debugger PIN: 339-931-393
+08/24/2022 05:19 [INFO]   * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+08/24/2022 05:30 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Lib\\site-packages\\IPython\\core\\interactiveshell.py', reloading
+08/24/2022 05:30 [INFO]   * Restarting with watchdog (windowsapi)
+08/24/2022 05:30 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 05:30 [INFO]                                  S T A R T                   24/08/2022 17:30:16
+08/24/2022 05:30 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 05:30 [INFO]  Config file:                   config\fxapi.cfg
+08/24/2022 05:30 [INFO]  Config used:                   DEFAULT
+08/24/2022 05:30 [INFO]  Log file:                      log\fxapi.log
+08/24/2022 05:30 [INFO]  File logging level:            INFO
+08/24/2022 05:30 [INFO]  Console logging level:         INFO
+08/24/2022 05:30 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 05:30 [WARNING]   * Debugger is active!
+08/24/2022 05:30 [INFO]   * Debugger PIN: 339-931-393
+08/24/2022 05:30 [INFO]   * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+08/24/2022 05:30 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Lib\\site-packages\\matplotlib_inline\\backend_inline.py', reloading
+08/24/2022 05:30 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Lib\\site-packages\\matplotlib_inline\\backend_inline.py', reloading
+08/24/2022 05:30 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Lib\\site-packages\\matplotlib_inline\\config.py', reloading
+08/24/2022 05:30 [INFO]   * Restarting with watchdog (windowsapi)
+08/24/2022 05:30 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 05:30 [INFO]                                  S T A R T                   24/08/2022 17:30:33
+08/24/2022 05:30 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 05:30 [INFO]  Config file:                   config\fxapi.cfg
+08/24/2022 05:30 [INFO]  Config used:                   DEFAULT
+08/24/2022 05:30 [INFO]  Log file:                      log\fxapi.log
+08/24/2022 05:30 [INFO]  File logging level:            INFO
+08/24/2022 05:30 [INFO]  Console logging level:         INFO
+08/24/2022 05:30 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 05:30 [WARNING]   * Debugger is active!
+08/24/2022 05:30 [INFO]   * Debugger PIN: 339-931-393
+08/24/2022 05:30 [INFO]   * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+08/24/2022 06:03 [INFO]   * Detected change in 'C:\\Users\\LindaLiu\\AppData\\Roaming\\Python\\Python39\\site-packages\\matplotlib\\pyplot.py', reloading
+08/24/2022 06:04 [INFO]   * Restarting with watchdog (windowsapi)
+08/24/2022 06:04 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 06:04 [INFO]                                  S T A R T                   24/08/2022 18:04:03
+08/24/2022 06:04 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 06:04 [INFO]  Config file:                   config\fxapi.cfg
+08/24/2022 06:04 [INFO]  Config used:                   DEFAULT
+08/24/2022 06:04 [INFO]  Log file:                      log\fxapi.log
+08/24/2022 06:04 [INFO]  File logging level:            INFO
+08/24/2022 06:04 [INFO]  Console logging level:         INFO
+08/24/2022 06:04 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 06:04 [WARNING]   * Debugger is active!
+08/24/2022 06:04 [INFO]   * Debugger PIN: 339-931-393
+08/24/2022 06:04 [INFO]   * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+08/24/2022 06:18 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Scripts\\conda-script.py', reloading
+08/24/2022 06:18 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Lib\\site-packages\\pkg_resources\\_vendor\\pyparsing.py', reloading
+08/24/2022 06:18 [INFO]   * Restarting with watchdog (windowsapi)
+08/24/2022 06:18 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 06:18 [INFO]                                  S T A R T                   24/08/2022 18:18:55
+08/24/2022 06:18 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 06:18 [INFO]  Config file:                   config\fxapi.cfg
+08/24/2022 06:18 [INFO]  Config used:                   DEFAULT
+08/24/2022 06:18 [INFO]  Log file:                      log\fxapi.log
+08/24/2022 06:18 [INFO]  File logging level:            INFO
+08/24/2022 06:18 [INFO]  Console logging level:         INFO
+08/24/2022 06:18 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 06:18 [WARNING]   * Debugger is active!
+08/24/2022 06:18 [INFO]   * Debugger PIN: 339-931-393
+08/24/2022 06:18 [INFO]   * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+08/24/2022 07:19 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Scripts\\conda-script.py', reloading
+08/24/2022 07:19 [INFO]   * Restarting with watchdog (windowsapi)
+08/24/2022 07:19 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 07:19 [INFO]                                  S T A R T                   24/08/2022 19:19:10
+08/24/2022 07:19 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 07:19 [INFO]  Config file:                   config\fxapi.cfg
+08/24/2022 07:19 [INFO]  Config used:                   DEFAULT
+08/24/2022 07:19 [INFO]  Log file:                      log\fxapi.log
+08/24/2022 07:19 [INFO]  File logging level:            INFO
+08/24/2022 07:19 [INFO]  Console logging level:         INFO
+08/24/2022 07:19 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 07:19 [WARNING]   * Debugger is active!
+08/24/2022 07:19 [INFO]   * Debugger PIN: 339-931-393
+08/24/2022 07:19 [INFO]   * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+08/24/2022 08:17 [INFO]   * Detected change in 'C:\\Users\\LindaLiu\\ML\\git repos\\summer22\\summer22\\final\\fxapi.py', reloading
+08/24/2022 08:17 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Lib\\genericpath.py', reloading
+08/24/2022 08:17 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Lib\\ntpath.py', reloading
+08/24/2022 08:17 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Lib\\typing.py', reloading
+08/24/2022 08:17 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Lib\\posixpath.py', reloading
+08/24/2022 08:17 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Lib\\datetime.py', reloading
+08/24/2022 08:17 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Lib\\site-packages\\werkzeug\\wsgi.py', reloading
+08/24/2022 08:17 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Lib\\site-packages\\werkzeug\\sansio\\response.py', reloading
+08/24/2022 08:17 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Lib\\site-packages\\werkzeug\\wrappers\\response.py', reloading
+08/24/2022 08:17 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Lib\\site-packages\\werkzeug\\wrappers\\__init__.py', reloading
+08/24/2022 08:17 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Lib\\site-packages\\itsdangerous\\_json.py', reloading
+08/24/2022 08:17 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Lib\\site-packages\\itsdangerous\\__init__.py', reloading
+08/24/2022 08:17 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Lib\\site-packages\\flask\\_compat.py', reloading
+08/24/2022 08:17 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Lib\\site-packages\\werkzeug\\local.py', reloading
+08/24/2022 08:17 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Lib\\site-packages\\flask\\json\\__init__.py', reloading
+08/24/2022 08:17 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Lib\\site-packages\\werkzeug\\routing.py', reloading
+08/24/2022 08:17 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Lib\\site-packages\\click\\types.py', reloading
+08/24/2022 08:17 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Lib\\site-packages\\click\\core.py', reloading
+08/24/2022 08:17 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Lib\\site-packages\\click\\decorators.py', reloading
+08/24/2022 08:17 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Lib\\site-packages\\click\\__init__.py', reloading
+08/24/2022 08:17 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Lib\\site-packages\\flask\\cli.py', reloading
+08/24/2022 08:17 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Lib\\site-packages\\flask\\config.py', reloading
+08/24/2022 08:17 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Lib\\site-packages\\flask\\json\\tag.py', reloading
+08/24/2022 08:17 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Lib\\site-packages\\flask\\sessions.py', reloading
+08/24/2022 08:17 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Lib\\site-packages\\werkzeug\\wrappers\\json.py', reloading
+08/24/2022 08:17 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Lib\\site-packages\\flask\\wrappers.py', reloading
+08/24/2022 08:17 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Lib\\site-packages\\pandas\\io\\pickle.py', reloading
+08/24/2022 08:17 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Lib\\site-packages\\pandas\\__init__.py', reloading
+08/24/2022 08:17 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Lib\\site-packages\\requests\\__init__.py', reloading
+08/24/2022 08:17 [INFO]   * Detected change in 'C:\\Users\\LindaLiu\\AppData\\Roaming\\Python\\Python39\\site-packages\\pythonjsonlogger\\jsonlogger.py', reloading
+08/24/2022 08:17 [INFO]   * Detected change in 'C:\\Users\\LindaLiu\\AppData\\Roaming\\Python\\Python39\\site-packages\\daiquiri\\types.py', reloading
+08/24/2022 08:17 [INFO]   * Detected change in 'C:\\Users\\LindaLiu\\AppData\\Roaming\\Python\\Python39\\site-packages\\daiquiri\\handlers.py', reloading
+08/24/2022 08:17 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Lib\\configparser.py', reloading
+08/24/2022 08:17 [INFO]   * Detected change in 'C:\\Users\\LindaLiu\\ML\\git repos\\summer22\\summer22\\final\\common\\myutils.py', reloading
+08/24/2022 08:17 [INFO]   * Restarting with watchdog (windowsapi)
+08/24/2022 08:17 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 08:17 [INFO]                                  S T A R T                   24/08/2022 20:17:54
+08/24/2022 08:17 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 08:17 [INFO]  Config file:                   config\fxapi.cfg
+08/24/2022 08:17 [INFO]  Config used:                   DEFAULT
+08/24/2022 08:17 [INFO]  Log file:                      log\fxapi.log
+08/24/2022 08:17 [INFO]  File logging level:            INFO
+08/24/2022 08:17 [INFO]  Console logging level:         INFO
+08/24/2022 08:17 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 08:17 [WARNING]   * Debugger is active!
+08/24/2022 08:17 [INFO]   * Debugger PIN: 339-931-393
+08/24/2022 08:17 [INFO]   * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+08/24/2022 08:18 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Scripts\\conda-script.py', reloading
+08/24/2022 08:18 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Lib\\site-packages\\pkg_resources\\_vendor\\pyparsing.py', reloading
+08/24/2022 08:18 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Lib\\site-packages\\setuptools\\_vendor\\pyparsing.py', reloading
+08/24/2022 08:18 [INFO]   * Restarting with watchdog (windowsapi)
+08/24/2022 08:18 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 08:18 [INFO]                                  S T A R T                   24/08/2022 20:18:08
+08/24/2022 08:18 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 08:18 [INFO]  Config file:                   config\fxapi.cfg
+08/24/2022 08:18 [INFO]  Config used:                   DEFAULT
+08/24/2022 08:18 [INFO]  Log file:                      log\fxapi.log
+08/24/2022 08:18 [INFO]  File logging level:            INFO
+08/24/2022 08:18 [INFO]  Console logging level:         INFO
+08/24/2022 08:18 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 08:18 [WARNING]   * Debugger is active!
+08/24/2022 08:18 [INFO]   * Debugger PIN: 339-931-393
+08/24/2022 08:18 [INFO]   * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+08/24/2022 09:17 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Scripts\\conda-script.py', reloading
+08/24/2022 09:17 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Lib\\site-packages\\pkg_resources\\_vendor\\pyparsing.py', reloading
+08/24/2022 09:17 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Lib\\site-packages\\setuptools\\_vendor\\pyparsing.py', reloading
+08/24/2022 09:17 [INFO]   * Restarting with watchdog (windowsapi)
+08/24/2022 09:17 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 09:17 [INFO]                                  S T A R T                   24/08/2022 21:17:53
+08/24/2022 09:17 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 09:17 [INFO]  Config file:                   config\fxapi.cfg
+08/24/2022 09:17 [INFO]  Config used:                   DEFAULT
+08/24/2022 09:17 [INFO]  Log file:                      log\fxapi.log
+08/24/2022 09:17 [INFO]  File logging level:            INFO
+08/24/2022 09:17 [INFO]  Console logging level:         INFO
+08/24/2022 09:17 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 09:17 [WARNING]   * Debugger is active!
+08/24/2022 09:17 [INFO]   * Debugger PIN: 339-931-393
+08/24/2022 09:17 [INFO]   * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+08/24/2022 09:32 [INFO]   * Detected change in 'C:\\Users\\LindaLiu\\ML\\git repos\\summer22\\summer22\\final\\functions.py', reloading
+08/24/2022 09:32 [INFO]   * Restarting with watchdog (windowsapi)
+08/24/2022 09:32 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 09:32 [INFO]                                  S T A R T                   24/08/2022 21:32:09
+08/24/2022 09:32 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 09:32 [INFO]  Config file:                   config\fxapi.cfg
+08/24/2022 09:32 [INFO]  Config used:                   DEFAULT
+08/24/2022 09:32 [INFO]  Log file:                      log\fxapi.log
+08/24/2022 09:32 [INFO]  File logging level:            INFO
+08/24/2022 09:32 [INFO]  Console logging level:         INFO
+08/24/2022 09:32 [INFO]  -------------------------------------------------------------------------------------
+08/24/2022 09:32 [WARNING]   * Debugger is active!
+08/24/2022 09:32 [INFO]   * Debugger PIN: 339-931-393
+08/24/2022 09:32 [INFO]   * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+08/30/2022 06:41 [INFO]  -------------------------------------------------------------------------------------
+08/30/2022 06:41 [INFO]                                  S T A R T                   30/08/2022 06:41:09
+08/30/2022 06:41 [INFO]  -------------------------------------------------------------------------------------
+08/30/2022 06:41 [INFO]  Config file:                   config\fxapi.cfg
+08/30/2022 06:41 [INFO]  Config used:                   DEFAULT
+08/30/2022 06:41 [INFO]  Log file:                      log\fxapi.log
+08/30/2022 06:41 [INFO]  File logging level:            INFO
+08/30/2022 06:41 [INFO]  Console logging level:         INFO
+08/30/2022 06:41 [INFO]  -------------------------------------------------------------------------------------
+08/30/2022 06:41 [INFO]   * Restarting with watchdog (windowsapi)
+08/30/2022 06:41 [INFO]  -------------------------------------------------------------------------------------
+08/30/2022 06:41 [INFO]                                  S T A R T                   30/08/2022 06:41:11
+08/30/2022 06:41 [INFO]  -------------------------------------------------------------------------------------
+08/30/2022 06:41 [INFO]  Config file:                   config\fxapi.cfg
+08/30/2022 06:41 [INFO]  Config used:                   DEFAULT
+08/30/2022 06:41 [INFO]  Log file:                      log\fxapi.log
+08/30/2022 06:41 [INFO]  File logging level:            INFO
+08/30/2022 06:41 [INFO]  Console logging level:         INFO
+08/30/2022 06:41 [INFO]  -------------------------------------------------------------------------------------
+08/30/2022 06:41 [WARNING]   * Debugger is active!
+08/30/2022 06:41 [INFO]   * Debugger PIN: 339-931-393
+08/30/2022 06:41 [INFO]   * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+08/30/2022 06:41 [INFO]   * Detected change in 'c:\\Users\\LindaLiu\\ML\\git repos\\summer22\\summer22\\final\\common\\myutils.py', reloading
+08/30/2022 06:41 [INFO]   * Detected change in 'c:\\Users\\LindaLiu\\ML\\git repos\\summer22\\summer22\\final\\common\\myutils.py', reloading
+08/30/2022 06:41 [INFO]   * Detected change in 'c:\\Users\\LindaLiu\\ML\\git repos\\summer22\\summer22\\final\\common\\myutils.py', reloading
+08/30/2022 06:41 [INFO]   * Restarting with watchdog (windowsapi)
+08/30/2022 06:41 [INFO]  -------------------------------------------------------------------------------------
+08/30/2022 06:41 [INFO]                                  S T A R T                   30/08/2022 06:41:25
+08/30/2022 06:41 [INFO]  -------------------------------------------------------------------------------------
+08/30/2022 06:41 [INFO]  Config file:                   config\fxapi.cfg
+08/30/2022 06:41 [INFO]  Config used:                   DEFAULT
+08/30/2022 06:41 [INFO]  Log file:                      log\fxapi.log
+08/30/2022 06:41 [INFO]  File logging level:            INFO
+08/30/2022 06:41 [INFO]  Console logging level:         INFO
+08/30/2022 06:41 [INFO]  -------------------------------------------------------------------------------------
+08/30/2022 06:41 [WARNING]   * Debugger is active!
+08/30/2022 06:41 [INFO]   * Debugger PIN: 339-931-393
+08/30/2022 06:41 [INFO]   * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+08/30/2022 06:41 [INFO]  127.0.0.1 - - [30/Aug/2022 06:41:50] "[33mGET / HTTP/1.1[0m" 404 -
+08/30/2022 06:41 [INFO]  127.0.0.1 - - [30/Aug/2022 06:41:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+08/30/2022 06:42 [ERROR]  "date" attribute missing. 
+08/30/2022 06:42 [INFO]  127.0.0.1 - - [30/Aug/2022 06:42:00] "[35m[1mGET /rates HTTP/1.1[0m" 500 -
+08/30/2022 06:42 [INFO]  127.0.0.1 - - [30/Aug/2022 06:42:00] "GET /rates?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+08/30/2022 06:42 [INFO]  127.0.0.1 - - [30/Aug/2022 06:42:00] "GET /rates?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+08/30/2022 06:42 [INFO]  127.0.0.1 - - [30/Aug/2022 06:42:00] "GET /rates?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+08/30/2022 06:42 [INFO]  127.0.0.1 - - [30/Aug/2022 06:42:00] "GET /rates?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+08/30/2022 06:42 [INFO]  127.0.0.1 - - [30/Aug/2022 06:42:00] "GET /rates?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+08/30/2022 06:42 [INFO]   * Detected change in 'c:\\Users\\LindaLiu\\ML\\git repos\\summer22\\summer22\\final\\apifunctions.py', reloading
+08/30/2022 06:42 [INFO]   * Detected change in 'c:\\Users\\LindaLiu\\ML\\git repos\\summer22\\summer22\\final\\apifunctions.py', reloading
+08/30/2022 06:42 [INFO]   * Detected change in 'c:\\Users\\LindaLiu\\ML\\git repos\\summer22\\summer22\\final\\apifunctions.py', reloading
+08/30/2022 06:42 [INFO]   * Detected change in 'c:\\Users\\LindaLiu\\ML\\git repos\\summer22\\summer22\\final\\apifunctions.py', reloading
+08/30/2022 06:42 [INFO]   * Restarting with watchdog (windowsapi)
+08/30/2022 06:43 [INFO]  -------------------------------------------------------------------------------------
+08/30/2022 06:43 [INFO]                                  S T A R T                   30/08/2022 06:43:00
+08/30/2022 06:43 [INFO]  -------------------------------------------------------------------------------------
+08/30/2022 06:43 [INFO]  Config file:                   config\fxapi.cfg
+08/30/2022 06:43 [INFO]  Config used:                   DEFAULT
+08/30/2022 06:43 [INFO]  Log file:                      log\fxapi.log
+08/30/2022 06:43 [INFO]  File logging level:            INFO
+08/30/2022 06:43 [INFO]  Console logging level:         INFO
+08/30/2022 06:43 [INFO]  -------------------------------------------------------------------------------------
+08/30/2022 06:43 [WARNING]   * Debugger is active!
+08/30/2022 06:43 [INFO]   * Debugger PIN: 339-931-393
+08/30/2022 06:43 [INFO]   * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+08/30/2022 06:43 [INFO]   * Detected change in 'c:\\Users\\LindaLiu\\ML\\git repos\\summer22\\summer22\\final\\fxapi2.py', reloading
+08/30/2022 06:43 [INFO]   * Detected change in 'c:\\Users\\LindaLiu\\ML\\git repos\\summer22\\summer22\\final\\fxapi2.py', reloading
+08/30/2022 06:43 [INFO]   * Detected change in 'c:\\Users\\LindaLiu\\ML\\git repos\\summer22\\summer22\\final\\fxapi2.py', reloading
+08/30/2022 06:43 [INFO]   * Detected change in 'c:\\Users\\LindaLiu\\ML\\git repos\\summer22\\summer22\\final\\fxapi2.py', reloading
+08/30/2022 06:43 [INFO]   * Restarting with watchdog (windowsapi)
+08/30/2022 06:43 [INFO]  -------------------------------------------------------------------------------------
+08/30/2022 06:43 [INFO]                                  S T A R T                   30/08/2022 06:43:58
+08/30/2022 06:43 [INFO]  -------------------------------------------------------------------------------------
+08/30/2022 06:43 [INFO]  Config file:                   config\fxapi.cfg
+08/30/2022 06:43 [INFO]  Config used:                   DEFAULT
+08/30/2022 06:43 [INFO]  Log file:                      log\fxapi.log
+08/30/2022 06:43 [INFO]  File logging level:            INFO
+08/30/2022 06:43 [INFO]  Console logging level:         INFO
+08/30/2022 06:43 [INFO]  -------------------------------------------------------------------------------------
+08/30/2022 06:43 [WARNING]   * Debugger is active!
+08/30/2022 06:43 [INFO]   * Debugger PIN: 339-931-393
+08/30/2022 06:43 [INFO]   * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+08/30/2022 06:44 [ERROR]  "date" attribute missing. 
+08/30/2022 06:44 [INFO]  127.0.0.1 - - [30/Aug/2022 06:44:08] "[31m[1mGET /rates HTTP/1.1[0m" 400 -
+08/30/2022 06:44 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Scripts\\conda-script.py', reloading
+08/30/2022 06:44 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Lib\\site-packages\\pkg_resources\\_vendor\\pyparsing.py', reloading
+08/30/2022 06:45 [INFO]   * Restarting with watchdog (windowsapi)
+08/30/2022 06:45 [INFO]  -------------------------------------------------------------------------------------
+08/30/2022 06:45 [INFO]                                  S T A R T                   30/08/2022 06:45:03
+08/30/2022 06:45 [INFO]  -------------------------------------------------------------------------------------
+08/30/2022 06:45 [INFO]  Config file:                   config\fxapi.cfg
+08/30/2022 06:45 [INFO]  Config used:                   DEFAULT
+08/30/2022 06:45 [INFO]  Log file:                      log\fxapi.log
+08/30/2022 06:45 [INFO]  File logging level:            INFO
+08/30/2022 06:45 [INFO]  Console logging level:         INFO
+08/30/2022 06:45 [INFO]  -------------------------------------------------------------------------------------
+08/30/2022 06:45 [WARNING]   * Debugger is active!
+08/30/2022 06:45 [INFO]   * Debugger PIN: 339-931-393
+08/30/2022 06:45 [INFO]   * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+08/30/2022 06:45 [ERROR]  "date" attribute needs to be in the format of year-month-day where all three must be digits. 
+08/30/2022 06:45 [INFO]  127.0.0.1 - - [30/Aug/2022 06:45:16] "[31m[1mGET /rates?date=20-12 HTTP/1.1[0m" 400 -
+08/30/2022 06:45 [ERROR]  "date" attribute needs to be in the format of year-month-day where all three must be digits. 
+08/30/2022 06:45 [INFO]  127.0.0.1 - - [30/Aug/2022 06:45:31] "[31m[1mGET /rates?date=20-12&currencies= HTTP/1.1[0m" 400 -
+08/30/2022 06:46 [ERROR]  Attribute "currencies" requires a pair of iso currencies separated with '-'
+08/30/2022 06:46 [INFO]  127.0.0.1 - - [30/Aug/2022 06:46:11] "[31m[1mGET /rates?date=2022-1-2&currencies= HTTP/1.1[0m" 400 -
+08/30/2022 06:46 [INFO]  0.006534876834284015 Successful request. 
+08/30/2022 06:46 [INFO]  127.0.0.1 - - [30/Aug/2022 06:46:26] "GET /rates?date=2022-1-2&currencies=vuv-gbp HTTP/1.1" 200 -
+08/30/2022 06:47 [INFO]   * Detected change in 'C:\\tools\\Anaconda3\\Lib\\os.py', reloading
+08/30/2022 06:47 [INFO]   * Restarting with watchdog (windowsapi)
+08/30/2022 06:47 [INFO]  -------------------------------------------------------------------------------------
+08/30/2022 06:47 [INFO]                                  S T A R T                   30/08/2022 06:47:23
+08/30/2022 06:47 [INFO]  -------------------------------------------------------------------------------------
+08/30/2022 06:47 [INFO]  Config file:                   config\fxapi.cfg
+08/30/2022 06:47 [INFO]  Config used:                   DEFAULT
+08/30/2022 06:47 [INFO]  Log file:                      log\fxapi.log
+08/30/2022 06:47 [INFO]  File logging level:            INFO
+08/30/2022 06:47 [INFO]  Console logging level:         INFO
+08/30/2022 06:47 [INFO]  -------------------------------------------------------------------------------------
+08/30/2022 06:47 [WARNING]   * Debugger is active!
+08/30/2022 06:47 [INFO]   * Debugger PIN: 339-931-393
+08/30/2022 06:47 [INFO]   * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
