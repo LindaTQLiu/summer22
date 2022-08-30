@@ -79,16 +79,18 @@ def getconfig(name, section="DEFAULT"):
 
 # setup logger using daiquiri
 # assumes cfg has consollogging and filelogging set up
+import daiquiri
+
 def setuplog(modulename, cfg):
     if not isdir("log"):
         print("Folder 'log' not found, creating...")
-        mkdir("log")    
+        mkdir("log")
     daiquiri.setup(level=logging.DEBUG,
         outputs=(
         daiquiri.output.Stream(
         level=getattr(logging, cfg["consolelogging"]),
-        formatter=daiquiri.formatter.ColorExtrasFormatter(
-                     fmt="%(asctime)s [%(levelname)s] %(message)s", datefmt="%I:%M")),
+        formatter = daiquiri.formatter.ColorExtrasFormatter(
+            fmt="%(asctime)s [%(levelname)s] %(message)s", datefmt="%I:%M")),
         daiquiri.output.File(
             modulename+".log",
             level=getattr(logging, cfg["filelogging"]),

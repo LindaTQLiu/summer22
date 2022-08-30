@@ -24,6 +24,7 @@ from common.myutils import *
 _modulename = "fxapi"
 cfgname = "DEFAULT"
 cfg = getconfig(_modulename, cfgname)
+print(cfg)
 log = setuplog(_modulename, cfg)
 
 LogPath = getLogPath(_modulename)
@@ -53,17 +54,12 @@ def process_data():
     currencies = request.args.get("currencies")
     in_date = request.args.get("date")
 
-    gurl = get_url(currencies, in_date)
+    gurl = get_url(currencies, in_date, df)
     if type(gurl)==list:
         pass
     else:
         log.error(gurl)       # something wrong with the input, specified by gurl.
-        response = app.response_class(
-            response = json.dumps('Nal'), 
-            status = 400, 
-            mimetype = 'application/json'
-        )
-        return response
+        return res(app, 'Nal', 400)
 
     # input for the two attributes have been validated. 
     url = gurl[0]
@@ -73,12 +69,7 @@ def process_data():
         data = data['rates']
     except KeyError:
         log.warning('Rates not available for the requested date.')
-        response = app.response_class(
-            response = json.dumps('Nal'), 
-            status = 500, 
-            mimetype = 'application/json'
-        )
-        return response
+        return res(app, 'Nal', 500)
 
 
     proc_currencies = gurl[1]        # list of the two processed currencies. 
@@ -87,23 +78,13 @@ def process_data():
         rate = get_rate(cur, data)     # if the requested rate is among the returned list, get_rate gives an int, otherwise a string - the error message. 
         if type(rate) == str:       # rate not available for this currency in the request. 
             log.warning(rate)
-            response = app.response_class(
-                response = json.dumps('Nal'), 
-                status = 500, 
-                mimetype = 'application/json'
-            )
-            return response
+            return res(app, 'Nal', 500)
         else:
             rates.append(rate)
 
     output = rates[1]/rates[0]
     log.info(str(output)+' Successful request. ')
-    response = app.response_class(
-        response = json.dumps(output), 
-        status = 200, 
-        mimetype = 'application/json'
-    )
-    return response
+    return res(app, output, 200)
 
 @app.route('/logs', methods=['GET'])
 def logs():
